@@ -14,3 +14,20 @@ function jumpingOnClouds(c) {
     }
     return count;
 }
+
+
+// return the minimum number of integers to delete from an array
+// in order to 'equalize' of given array. 
+
+function equalizeArray(arr) {
+    let count = 0;
+    let j = 0;
+    arr.sort()
+    for(let i=1; i < arr.length; i++){
+        if(arr[i] != arr[j]){
+            j++
+            count++
+        }
+    }
+    return count;
+}
